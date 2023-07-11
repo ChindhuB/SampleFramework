@@ -10,6 +10,7 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
 import models.api.Login;
+
 import org.apache.http.HttpStatus;
 
 import java.util.Map;
@@ -29,7 +30,7 @@ public class AuthService extends BaseService {
     }
 
     public Login login(String email, String password) {
-        return Login.builder().setEmail(email).setPassword(password).build();
+        return Login.builder().email(email).password(password).build();
     }
 
     public ExtractableResponse Authorize(String email, String pswd) {

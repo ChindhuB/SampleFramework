@@ -1,7 +1,7 @@
 package constant.api.accounts;
 
 import constant.api.Endpoints;
-
+//
 public enum AccountsEndpoints implements Endpoints {
     BASE_URI("");
 private String url;
